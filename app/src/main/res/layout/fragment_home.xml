@@ -34,7 +34,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Input DEC (-90 to 90)"
+        android:text="Input DEC"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -53,7 +53,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Search Radius in Degrees (0 to 360)"
+        android:text="Search Radius (0° to 360°)"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -124,6 +124,7 @@
         android:autofillHints=""
         android:background="@color/grey"
         android:ems="10"
+        android:text="0"
         android:inputType="numberDecimal"
         android:textSize="26sp"
         android:paddingStart="8dp"
@@ -143,6 +144,7 @@
         android:autofillHints=""
         android:background="@color/grey"
         android:ems="10"
+        android:text="0"
         android:inputType="numberSigned|numberDecimal"
         android:paddingStart="8dp"
         android:textColor="@color/black"
@@ -155,6 +157,45 @@
         app:layout_constraintVertical_bias="0.234"
         tools:ignore="HardcodedText,LabelFor,RtlSymmetry" />
 
+    <Spinner
+        android:id="@+id/dec_deg_spinner"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Spinner
+        android:id="@+id/dec_min_spinner"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Spinner
+        android:id="@+id/dec_sec_spinner"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
     <EditText
         android:id="@+id/RADIUS_Number_Input"
         android:layout_width="142dp"
@@ -162,6 +203,7 @@
         android:autofillHints=""
         android:background="@color/grey"
         android:ems="10"
+        android:text="10"
         android:inputType="numberDecimal"
         android:paddingStart="8dp"
         android:textColor="@color/black"
@@ -199,6 +241,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.124" />
+
+    <Switch
+        android:id="@+id/dec_degree_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        android:theme="@style/SCBSwitch"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/dec_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Degrees"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
 
     <Spinner
         android:id="@+id/ra_hour_spinner"

@@ -13,13 +13,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="note"
         android:textColor="@color/black"
+        android:autoLink="web"
+        android:text="More Star info can be found here &#xA;&#xA;https://www.as.up.krakow.pl/ephem&#xA;&#xA;https://simbad.u-strasbg.fr/simbad/sim-fbasic"
         android:textAlignment="center"
+        android:textColorLink="@color/purple_500"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
         tools:ignore="HardcodedText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
